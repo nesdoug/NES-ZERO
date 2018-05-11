@@ -25,8 +25,11 @@ import os
 
 
 
-#shift - right click the .nes file - copy as path - paste it here - in quotes, with an r in front
-path = r"C:\Users\Doug\Desktop\PowerPak\py_backup\test.nes"
+if len(sys.argv) < 2:
+	print("usage: " + sys.argv[0] + " <path>")
+	exit()
+path = sys.argv[1]
+
 
 # initialize some variables
 
